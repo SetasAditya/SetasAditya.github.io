@@ -26,15 +26,6 @@ My current research focuses on **Dynamic Soft Robots** that refine their policie
 
 - *2025.05*:  🎉 Our paper **"Self-Balancing, Memory Efficient, Dynamic Metric Space Data Maintenance, for Rapid Multi-Kernel Estimation"** was accepted to the **ECML PKDD 2025 Research Track** (24% acceptance rate). I will present it in **Porto, Portugal** this September.
 
-# 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-Here’s how your **📝 Publications** section could look, formatted similarly to your example and based on your publication list:
-
----
-
 # 📝 Publications
 
 <!-- <div class='paper-box'>
