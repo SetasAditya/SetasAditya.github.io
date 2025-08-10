@@ -35,6 +35,7 @@ My current research focuses on **Dynamic Soft Robots** that refine their policie
 <div class='paper-box-text' markdown="1"> -->
 
 [Self-Balancing, Memory Efficient, Dynamic Metric Space Data Maintenance, for Rapid Multi-Kernel Estimation](https://arxiv.org/abs/2504.18003) [ECML PKDD 2025]
+
 **Aditya S Ellendula**, Chandrajit Bajaj
 <!-- - Introduces a parameterized dynamic octree achieving logarithmic-time updates and significant speed/memory improvements for evolving metric space queries. -->
 
