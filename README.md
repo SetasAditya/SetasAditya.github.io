@@ -1,106 +1,72 @@
-# Portfolio Website
 
-A responsive portfolio website template that you can use to showcase your skills, projects, and future development plans. Feel free to use this template for your personal portfolio and customize it to suit your needs.
+<h1 align="center">
+AcadHomepage
+</h1>
 
-![Project Demo](/assets/github-portfolio-template-demo.JPG)
+<div align="center">
 
-## Table of Contents
+[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
+[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
+</div>
 
-- [About the Project](#about-the-project)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Example Portfolios](#example-portfolios)
-- [Contributing](#contributing)
-- [License](#license)
-- [Attribution](#attribution-appreciated-but-not-required)
-- [Contact](#contact)
+<p align="center">A Modern and Responsive Academic Personal Homepage</p>
 
-## About the Project
+<p align="center">
+    <br>
+    <img src="docs/screenshot.png" width="100%"/>
+    <br>
+</p>
 
-This template is a responsive portfolio website that can be used by developers, designers, or anyone who wants to showcase their skills and projects. It provides sections for an About Me page, a Skill Set page, a Portfolio page, and a future plans section.
+Some examples:
+- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
+- [Personal Homepage of the author](https://rayeren.github.io/)
 
-## Project Structure
+## Key Features
+- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
+- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
+- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
+- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
+- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
 
-- `index.html`: The main page of the portfolio website.
-- `about-me.html`: The about me page.
-- `skill-set.html`: The skillset page.
-- `portfolio.html`: The portfolio page.
-- `style.css`: The main CSS file for styling.
-- `style-about-me.css`: CSS file specific to the about me page.
-- `style-portfolio.css`: CSS file specific to the portfolio page.
-- `assets/`: Directory containing project images and assets.
+## Quick Start
 
-## Getting Started
+1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
+1. Configure the google scholar citation crawler:
+    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
+    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
+    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
+1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
+1. Modify the configuration of your homepage `_config.yml`:
+    1. `title`: the title of your homepage
+    1. `description`: the description of your homepage
+    1. `repository`: USER_NAME/REPO_NAME  
+    1. `google_analytics_id` (optional): google analytics ID
+    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
+    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
+    1. More configuration details are described in the comments.
+1. Add your homepage content in `_pages/about.md`.
+    1. You can use html+markdown syntax just same as jekyll.
+    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
+        ```html
+        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
+        ``` 
+        > Q: How to get the google scholar paper ID?   
+        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
+1. Your page will be published at `https://USERNAME.github.io`.
 
-1. Fork this repository to your GitHub account by clicking the "Fork" button in the top right corner.
-2. Clone your forked repository to your local machine using the following command:
+## Debug Locally
 
-   ```bash
-   git clone https://github.com/iluskaland/portfolio-template.git
+1. Clone your REPO to local using `git clone`.
+1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
+1. Run `bash run_server.sh` to start Jekyll livereload server.
+1. Open http://127.0.0.1:4000 in your browser.
+1. If you change the source code of the website, the livereload server will automatically refresh.
+1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
 
-Now, you have your own fork of the repository, and you can make changes and contributions as described in the "Contributing" section.
+# Acknowledges
 
-## Usage
-
-To view the live demonstration of this portfolio template, visit [this link](https://iluskaland.github.io/portfolio-template/index.html). You can customize the content and styles to create your own portfolio website. Feel free to replace the content with your information and add your projects.
-
-## Customization
-
-Customize this template by modifying the HTML and CSS files to match your personal information, skills, and projects. You can change the colors, fonts, and layout to create a unique portfolio.
-
-## Dark Mode Support
-
-Now featuring dark mode support! The portfolio website automatically adapts to your system's color scheme preference.
-
-![Dark Mode Support](/assets/github-portfolio-template-demo-dark.png)
-
-## Example Portfolios
-
-Check out this portfolio created using this template:
-
-1. [iluskaland-portfolio](https://iluskaland-portfolio.netlify.app/) - A showcase of what you can achieve with this template.
-
-*I intentionally did not enable the dark preference on my website, because I prefer the light mode.*
-
-## Contributing
-
-I welcome contributions from the open-source community to improve and enhance this project. Whether you're a developer, designer, or someone with new ideas, your contributions are valuable. Here are some guidelines to get you started:
-
-### How to Contribute
-
-1. Fork this repository to your GitHub account.
-2. Clone the forked repository to your local machine.
-3. Create a new branch for your contribution.
-4. Make your changes and ensure they adhere to our code and style standards.
-5. Test your changes thoroughly.
-6. Commit your changes with a descriptive commit message.
-7. Push your changes to your GitHub repository.
-8. Create a Pull Request (PR) to my `main` branch.
-9. I will review your contribution, and once approved, it will be merged.
-
-### Code and Style Guidelines
-
-- Maintain a consistent coding style with the existing codebase.
-- Use only HTML and CSS for any contributions. Avoid introducing other languages or technologies.
-- Comment your code for clarity and documentation.
-- Ensure that your changes do not introduce errors or break existing features.
-
-### Reporting Issues
-
-If you encounter any issues, have ideas for improvements, or would like to request new features, please open an issue on this repository. I appreciate your feedback and will address your concerns as soon as possible.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Attribution (Appreciated, but Not Required)
-
-I've put a lot of effort into creating this portfolio template, and I'm thrilled if you find it useful for your personal projects. While it's not mandatory, I would greatly appreciate it if you could consider providing attribution to the original source. This could be a simple note in your website's footer or a dedicated "Credits" section, linking back to this repository. Your support helps others discover and benefit from this open-source project.
-
-## Contact
-
-[Github](https://github.com/iluskaland)
-
-Feel free to reach out if you have any questions or feedback!
+- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
+- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
+- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
