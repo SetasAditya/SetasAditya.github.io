@@ -35,32 +35,32 @@ My current research focuses on **Dynamic Soft Robots** that refine their policie
 <div class='paper-box-text' markdown="1"> -->
 
 [Self-Balancing, Memory Efficient, Dynamic Metric Space Data Maintenance, for Rapid Multi-Kernel Estimation](https://arxiv.org/abs/2504.18003) [ECML PKDD 2025]
-- **Aditya S Ellendula**, Chandrajit Bajaj
-- Introduces a parameterized dynamic octree achieving logarithmic-time updates and significant speed/memory improvements for evolving metric space queries.
+**Aditya S Ellendula**, Chandrajit Bajaj
+<!-- - Introduces a parameterized dynamic octree achieving logarithmic-time updates and significant speed/memory improvements for evolving metric space queries. -->
 
 [Geometric Preference Elicitation for Minimax Regret Optimization in Uncertainty Matroids](https://arxiv.org/abs/2503.18668)
 
 **Aditya S Ellendula**, A K Pujari, V Kumar, V R Kagita
 
-Proposes a geometric framework for preference elicitation in uncertainty matroids, minimizing regret through adaptive decision boundaries.
+<!-- Proposes a geometric framework for preference elicitation in uncertainty matroids, minimizing regret through adaptive decision boundaries. -->
 
 [Curvature Informed Furthest Point Sampling](https://arxiv.org/abs/2411.16995)
 
 S Bhardwaj, A Vinod, S Bhattacharya, A Koganti, **Aditya S Ellendula**, B Reddy
 
-Develops a curvature-aware reinforcement learning approach for furthest point sampling, improving accuracy and efficiency in 3D point cloud processing.
+<!-- Develops a curvature-aware reinforcement learning approach for furthest point sampling, improving accuracy and efficiency in 3D point cloud processing. -->
 
 [Neural Architecture Search Applied to Autoencoders Trained on Noisy Industrial Data: Single and Multi-objective Investigations](https://ieeexplore.ieee.org/abstract/document/10704171)
 
 **Aditya S Ellendula**, A Anand, A K Bhattacharya
 
-Presents NAS-based optimization for robust autoencoder architectures handling noisy industrial datasets, balancing reconstruction quality and computational efficiency.
+<!-- Presents NAS-based optimization for robust autoencoder architectures handling noisy industrial datasets, balancing reconstruction quality and computational efficiency. -->
 
 [Mathematical Modelling and a Numerical Solution for High Precision Satellite Ephemeris Determination](https://arxiv.org/abs/2311.15028) [International Conference and Exhibition on Satellite and Space Missions, 2023]
 
 A Gundakaram, A Sangala, **Aditya S Ellendula**, P Kansal, L Lakshitaa, …
 
-Presents a high-precision numerical modeling framework for satellite ephemeris determination using adaptive Runge–Kutta integrators.
+<!-- Presents a high-precision numerical modeling framework for satellite ephemeris determination using adaptive Runge–Kutta integrators. -->
 
 # 📖 Educations
 
