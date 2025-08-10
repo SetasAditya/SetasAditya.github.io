@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I am Aditya Sai Ellendula, a Master’s student in Computer Science at the University of Texas at Austin, specializing in machine learning, reinforcement learning, and intelligent systems. 
+I am Aditya Sai Ellendula, a Master’s student in Computer Science at the University of Texas at Austin, specializing in machine learning, reinforcement learning, and Multi Agent LLM Coordination. 
 
 My current research focuses on **Dynamic Soft Robots** that refine their policies to optimally sense, reconfigure, and navigate in unknown environments; **token-efficient, context-aware Theory-of-Mind prompting** for scalable, zero-shot ad-hoc LLM coordination; and **reinforcement-learning-based optimal control and data maintenance**. I aim to design computationally efficient, scalable, and robust solutions that bridge theoretical rigor with real-world applicability across robotics, multi-agent systems, and adaptive data structures.
 
